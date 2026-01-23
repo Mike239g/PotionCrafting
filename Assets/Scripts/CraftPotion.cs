@@ -10,7 +10,6 @@ public class CraftPotion : MonoBehaviour
     {
         if (potionRenderer != null)
         {
-            potionRenderer.material.color = new Color(0, 0, 0);
             color = potionRenderer.material.color;
         }
         else
