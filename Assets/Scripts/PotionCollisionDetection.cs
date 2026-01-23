@@ -28,7 +28,7 @@ public class PotionCollisionDetection : MonoBehaviour
             if (pdd)
             {
                 AddPotion(pdd.gameObject.GetComponent<PotionDescription>().TakeColor());
-                Destroy(other.gameObject);
+                pdd.gameObject.GetComponent<PotionDescription>().returnOfSpawn();
             }
         }
     }
